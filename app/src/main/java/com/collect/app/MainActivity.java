@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void saveToFile(String inputText) {
         String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(new Date());
-        String newEntry = "## " + timestamp + "\n\n" + inputText + "\n\n---\n\n";
+        String newEntry = timestamp + " " + inputText + "\n";
 
         File file = new File(FILE_PATH);
         try {
